@@ -12,18 +12,28 @@
 	],
 	"activationEvents": [
 		"onCommand:genbase64uuid.base64uuid",
-		"onCommand:genbase64uuid.dasheduuid"
+		"onCommand:genbase64uuid.dasheduuid",
+		"onCommand:genbase64uuid.todasheduuid",
+		"onCommand:genbase64uuid.tobase64uuid"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
 				"command": "genbase64uuid.base64uuid",
-				"title": "Generate base64 uuid"
+				"title": "Generate base64 encoded uuid"
 			},
 			{
 				"command": "genbase64uuid.dasheduuid",
 				"title": "Generate dashed uuid"
+			},
+			{
+				"command": "genbase64uuid.todasheduuid",
+				"title": "Decode base64 into dashed uuid"
+			},
+			{
+				"command": "genbase64uuid.tobase64uuid",
+				"title": "Encode dashed uuid into base64"
 			}
 		]
 	},
