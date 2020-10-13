@@ -3,6 +3,7 @@
 	"displayName": "genbase64uuid",
 	"description": "Generate base64 encoded UUID-V4",
 	"version": "0.0.1",
+	"publisher": "armongate",
 	"engines": {
 		"vscode": "^1.50.0"
 	},
